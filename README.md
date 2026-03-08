@@ -1,26 +1,25 @@
-# 🐟 AI-Enabled Stress Early Warning System — Asian Seabass Aquaculture
+# AI-Enabled Stress Early Warning System — Asian Seabass Aquaculture
 
 A minimal but complete predictive stress intelligence module for detecting early stress signals in farmed Asian seabass (*Lates calcarifer*), built with a Python FastAPI backend and a Next.js TypeScript frontend.
 
-> **Mini-project exercise for Fraunhofer Singapore** — demonstrating multi-signal fusion, ML-based stress prediction, and temporal risk foresight using synthetic/mock data.
 
 ---
 
-## 🎯 Project Goal
+##  Project Goal
 
 > *"What if stress threats could be detected not when losses are visible, but when the earliest, hidden signals first emerge?"*
 
 Conventional aquaculture detects fish stress when visible symptoms appear (disease, mortality). This system aims to identify stress earlier by fusing signals across five categories:
 
-- 🌊 **Environmental / Water Chemistry** — DO, pH, NH₃, NO₂, CO₂, ORP, temperature, salinity, light level
-- 🐠 **Behavioural** — swimming distance, tailbeat frequency, crowding index, biomass, fish count
-- 🧬 **Biological Markers** — cortisol levels, microbiome dysbiosis index
-- 🌤️ **Environmental Context** — weather, ambient noise, vibration, human presence & dwell time
-- 📋 **Lifecycle / Farm Management** — mortality events, grading events, stocking density, AWG
+-  **Environmental / Water Chemistry** — DO, pH, NH₃, NO₂, CO₂, ORP, temperature, salinity, light level
+-  **Behavioural** — swimming distance, tailbeat frequency, crowding index, biomass, fish count
+-  **Biological Markers** — cortisol levels, microbiome dysbiosis index
+-  **Environmental Context** — weather, ambient noise, vibration, human presence & exposure time
+-  **Lifecycle / Farm Management** — mortality events, grading events, stocking density, AWG
 
 ---
 
-## 🏗️ Architecture
+## Architecture
 
 ```
 backend/
@@ -44,14 +43,14 @@ Python Backend (FastAPI :8000)
   └── /lstm-forecast         → learned temporal trajectory (LSTM)
         ↕ HTTP
 Next.js Frontend (:3000)
-  ├── Simulate new scenario  (blue button)
-  ├── Scenario forecast      (green button)
-  └── LSTM trajectory        (purple button)
+  ├── Simulate new scenario  
+  ├── Scenario forecast      
+  └── LSTM trajectory        
 ```
 
 ---
 
-## 🤖 AI Models
+## AI Models
 
 | Model | Type | Purpose |
 |---|---|---|
@@ -65,7 +64,7 @@ The **LSTM** captures temporal dependencies in sensor sequences, detecting hidde
 
 ---
 
-## 🚀 Getting Started
+## Getting Started
 
 ### Prerequisites
 
@@ -178,7 +177,7 @@ npm run dev
 
 ---
 
-## 📡 Signal Coverage
+## Signal Coverage
 
 | Signal | Included |
 |---|---|
@@ -199,7 +198,13 @@ npm run dev
 
 ---
 
-## 🎨 UI Theme
+## Tools I used
+- Cursor IDE - to write and run codes
+- Preplexity Research Mode - to research and read papers on the different signals that are combined to read about the fish health
+
+---
+
+## UI Theme
 
 Dark "deep ocean" palette:
 
@@ -217,18 +222,18 @@ Dark "deep ocean" palette:
 
 ---
 
-## 🗺️ Future Work
+## Future Work
 
 - **Seed sharing** — connect all three endpoints to the same farm state for consistent numbers
 - **SHAP explainability** — surface top stress-driving features per prediction
-- **Real sensor integration** — replace synthetic generator with TimescaleDB / InfluxDB stream
-- **LLM-augmented reasoning** — natural language risk narrative via GPT-4o or local Ollama model
+- **Real sensor integration** — replace synthetic generator with a real time DB stream
+- **LLM-augmented reasoning** — natural language risk narrative via api call with a pre running GPT or local Ollama model
 - **Computer vision module** — YOLO/ByteTrack fish tracking to replace scalar proxies
 - **Digital twin** — physics-based tank simulation with real-time sensor coupling
 
 ---
 
-## 📁 Key Files
+## Key Files
 
 | File | Purpose |
 |---|---|
@@ -239,11 +244,3 @@ Dark "deep ocean" palette:
 | `app/page.tsx` | Next.js dashboard with dark ocean theme |
 
 ---
-
-## 📄 License
-
-MIT
-
----
-
-*Built as a mini-project exercise for Fraunhofer Singapore — demonstrating early-warning AI system design for aquaculture stress detection.*
