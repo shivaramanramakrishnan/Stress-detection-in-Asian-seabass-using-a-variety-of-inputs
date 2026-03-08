@@ -202,23 +202,6 @@ npm run dev
 
 ---
 
-## UI Theme
-
-Dark "deep ocean" palette:
-
-| Role | Colour |
-|---|---|
-| Background | `#020617` |
-| Panel / Card | `#0b1120` |
-| Primary (buttons) | `#38bdf8` |
-| Accent (forecast) | `#22c55e` |
-| LSTM (button) | `#a78bfa` |
-| Warning | `#f97316` |
-| Critical | `#ef4444` |
-| Text primary | `#e5e7eb` |
-| Border | `#1f2937` |
-
----
 
 ## Future Work
 
