@@ -19,6 +19,12 @@ Conventional aquaculture detects fish stress when visible symptoms appear (disea
 
 ---
 
+## Tools I used
+- Cursor IDE - to write and run codes
+- Preplexity Research Mode - to research and read papers on the different signals that are combined to read about the fish health
+
+---
+
 ## Architecture
 
 ```
@@ -195,12 +201,6 @@ npm run dev
 | Stocking density & AWG | ✅ |
 | Visual/camera baselines | 🔄 Scalar proxies (future: YOLO/ByteTrack) |
 | Audio spectrum analysis | 🔄 Scalar proxy via noise dB (future: hydrophone) |
-
----
-
-## Tools I used
-- Cursor IDE - to write and run codes
-- Preplexity Research Mode - to research and read papers on the different signals that are combined to read about the fish health
 
 ---
 
