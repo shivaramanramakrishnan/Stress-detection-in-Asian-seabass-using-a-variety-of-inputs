@@ -7,9 +7,7 @@ A minimal but complete predictive stress intelligence module for detecting early
 
 ##  Project Goal
 
-> *"What if stress threats could be detected not when losses are visible, but when the earliest, hidden signals first emerge?"*
-
-Conventional aquaculture detects fish stress when visible symptoms appear (disease, mortality). This system aims to identify stress earlier by fusing signals across five categories:
+Conventional aquaculture detects fish stress when visible symptoms appear. This system aims to identify stress earlier by fusing signals across five categories:
 
 -  **Environmental / Water Chemistry** — DO, pH, NH₃, NO₂, CO₂, ORP, temperature, salinity, light level
 -  **Behavioural** — swimming distance, tailbeat frequency, crowding index, biomass, fish count
@@ -225,7 +223,6 @@ Dark "deep ocean" palette:
 ## Future Work
 
 - **Seed sharing** — connect all three endpoints to the same farm state for consistent numbers
-- **SHAP explainability** — surface top stress-driving features per prediction
 - **Real sensor integration** — replace synthetic generator with a real time DB stream
 - **LLM-augmented reasoning** — natural language risk narrative via api call with a pre running GPT or local Ollama model
 - **Computer vision module** — YOLO/ByteTrack fish tracking to replace scalar proxies
@@ -241,6 +238,6 @@ Dark "deep ocean" palette:
 | `train_models.py` | Trains Random Forest regressor and classifier |
 | `train_lstm.py` | Trains PyTorch LSTM on 24-step sequences |
 | `api.py` | FastAPI server with 4 endpoints |
-| `app/page.tsx` | Next.js dashboard with dark ocean theme |
+| `app/page.tsx` | Next.js dashboard |
 
 ---
