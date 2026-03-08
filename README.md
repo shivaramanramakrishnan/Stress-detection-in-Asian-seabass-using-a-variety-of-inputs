@@ -30,12 +30,12 @@ backend/
   synthetic_data.py     # Multi-signal synthetic data generator + LSTM sequences
   train_models.py       # Random Forest regressor + classifier training
   train_lstm.py         # LSTM neural network training
-  api.py                # FastAPI backend (4 endpoints)
+  api.py                # FastAPI backend
   requirements.txt
 
 frontend/
   app/
-    page.tsx            # Next.js dashboard (3 AI modules)
+    page.tsx            # Next.js dashboard
 ```
 
 ```
@@ -220,7 +220,7 @@ npm run dev
 | `synthetic_data.py` | Generates synthetic sensor rows and LSTM sequences |
 | `train_models.py` | Trains Random Forest regressor and classifier |
 | `train_lstm.py` | Trains PyTorch LSTM on 24-step sequences |
-| `api.py` | FastAPI server with 4 endpoints |
+| `api.py` | FastAPI server with for backend data |
 | `app/page.tsx` | Next.js dashboard |
 
 ---
